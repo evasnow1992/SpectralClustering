@@ -20,6 +20,7 @@ distanceTransform: a integer to indicate how the input matrix should be transfor
 
 
 The function returns two variables:
+
 dataNameList: a m*1 cell array providing the name of the remaining data after doing the filtering and clustering.
 
 clusterIndex: a m*1 vector providing the cluster index of each remaining data point. The vector is arranged in the same order as the dataNameList.
