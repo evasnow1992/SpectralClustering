@@ -1,22 +1,22 @@
 # SpectralClustering
-The function spectralclustering.m implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng.
+The function spectralclustering.m implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng. This function identify clusters from data represented by an affinity matrix (rather than feature vectors as in the standard version). The affinity between each pair of data points is defined by the user.
 
 
 The function takes in seven parameters, which include:
 
-affinityMatrix: a n*n matrix to represent the graph.
+affinityMatrix: a n*n affinity matrix to represent the data.
 
-dataNameList: a n*1 cell array to indicate the name (for e.g. gene name) of the data.
+dataNameList: a n*1 cell array to indicate the name (for e.g. gene name) of each data point.
 
-k: the number of clusters.
+k: the number of clusters to be identified.
 
-sigmag: the standard deviation to be used in the gaussian kernel in transforming the input matrix.
+sigmag: the standard deviation of Gaussian kernel to be used to transfer the input matrix.
 
-threshold: the threshold to be used in filtering transformed affinities. Edges with transformed affinities below the thresholds would be removed.
+threshold: the threshold to be used to filter the transformed affinities. Edges with transformed affinities below the thresholds would be removed.
 
 figureShow: a logical value to indicate whether to show the figures for intermediate results.
 
-distanceTransform: a integer to indicate how the input matrix should be transformed into a distance matrix (0 for no transformation, used when the input matrix is already a distance matrix rather than an affinity matrix; 1 for taking inverse, 2 for taking the negative).
+distanceTransform: a integer to indicate how the input matrix should be transformed into a distance matrix (0 for no transformation, if the input matrix is already a distance matrix rather than an affinity matrix; 1 for taking inverse, 2 for taking the negative).
 
 
 The function returns two variables:
@@ -27,7 +27,7 @@ clusterIndex: a m*1 vector providing the cluster index of each remaining data po
 
 
 
-scUserHandle_BRCA_metabric.m and scUserHandle_GBM.m provide two examples in using the function spectralclustering and writing the results into a file under the Results directory. Users should change the input and output file directories to the ones on their local machine.
+scUserHandle_BRCA_metabric.m and scUserHandle_GBM.m provide two example handles for using the function and writing the results into a file under the Results directory. Users should change the input and output file directories to the ones on their local machine.
 
 An example output of running scUserHandle_BRCA_metabric.m would be
 
