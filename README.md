@@ -1,5 +1,5 @@
 # SpectralClustering
-The function spectralclustering.m implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng. This function identify clusters from data represented by an affinity matrix (rather than feature vectors as in the standard version). The affinity between each pair of data points is defined by the user.
+The function spectralclustering.m implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng. This function identifies clusters from data represented by an affinity matrix (rather than feature vectors as in the standard version). The affinity between each pair of data points is defined by the user.
 
 
 The function takes in seven parameters, which include:
@@ -26,8 +26,10 @@ dataNameList: a m*1 cell array providing the name of the remaining data after do
 clusterIndex: a m*1 vector providing the cluster index of each remaining data point. The vector is arranged in the same order as the dataNameList.
 
 
+The function spectralclustering_consensus.m implements the consensus extension of spectral clustering. It takes in one more parameter, repeat, an integer value indicates the number of replications of clustering. The consensus matrix will be visualized after calling the function.
 
-scUserHandle_BRCA_metabric.m and scUserHandle_GBM.m provide two example handles for using the function and writing the results into a file under the Results directory. Users should change the input and output file directories to the ones on their local machine.
+
+scUserHandle.m and scUserHandle_consensus.m provide two example handles for using the functions and writing the results into a file under the Results directory. Users should change the input and output file directories to the ones on their local machine.
 
 An example output of running scUserHandle_BRCA_metabric.m would be
 
