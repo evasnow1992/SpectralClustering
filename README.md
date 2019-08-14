@@ -31,7 +31,7 @@ The function spectralclustering_consensus.m implements the consensus extension o
 
 scUserHandle.m and scUserHandle_consensus.m provide two example handles for using the functions and writing the results into a file under the Results directory. Users should change the input and output file directories to the ones on their local machine.
 
-An example output of running scUserHandle_BRCA_metabric.m would be
+An example output of running scUserHandle.m would be
 
 0 data points have been removed.
 
