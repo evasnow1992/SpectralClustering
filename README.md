@@ -1,8 +1,8 @@
 # SpectralClustering
 This repository provides functions that implement Spectral Clustering and Consensus Spectral Clustering in MatLab, and handle scripts for using the functions.
 
-The function **spectralclustering.m** implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng. This function identifies clusters from data represented by an affinity matrix (rather than feature vectors as in the standard version). The affinity between each pair of data points is defined by the user.
 
+The function **spectralclustering.m** implements the spectral clustering algorithm derived from the classical algorithm published in 2002 by Ng. This function identifies clusters from data represented by an affinity matrix (rather than feature vectors as in the standard version). The affinity between each pair of data points is defined by the user.
 
 The function takes in seven parameters, which include:
 
